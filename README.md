@@ -1,3 +1,5 @@
+project deployed on streamlit : https://npc-action-predictor.streamlit.app/
+
 NPC Action Prediction (Supervised Learning)
 
 This project predicts how a Non-Player Character (NPC) behaves in a game environment using a supervised machine learning model, specifically a Decision Tree Classifier.
