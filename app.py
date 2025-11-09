@@ -18,7 +18,7 @@ st.write("**Model Accuracy:** ~91% (approx, varies slightly each run)")
 st.markdown("---")
 
 # Collect user input
-st.header("🕹️ NPC Input Parameters") 
+st.header("🕹️ NPC Input Parameters")
 
 env_state = st.selectbox("Environment State", label_encoders["Environment_State"].classes_)
 opp_strategy = st.selectbox("Opponent Strategy", label_encoders["Opponent_Strategy"].classes_)
@@ -51,3 +51,14 @@ if st.button("Predict NPC Action"):
     prediction = model.predict(input_data)
     predicted_label = target_encoder.inverse_transform(prediction)[0]
     st.success(f"🧠 Predicted NPC Action: **{predicted_label}**")
+
+# ------------------ Footer ------------------
+st.markdown(
+    """
+    <hr style="margin-top: 50px;">
+    <div style='text-align: center; color: gray; font-size: 14px;'>
+        Made by <b>Swayam Agarwal</b>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
